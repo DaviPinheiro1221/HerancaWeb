@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Menu Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .menu-container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 1rem;
+            margin-top: 1rem;
+            background: linear-gradient(90deg, #1d7bd0, #276887);
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background: linear-gradient(90deg, #113e5e, #005fa3);
+            }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h2>Menu Principal</h2>
+        <button id="btnAddColaborador">Adicionar Colaborador</button>
+        <button id="btnSair">Sair</button>
+    </div>
+
+    <script>
+        document.getElementById('btnAddColaborador').addEventListener('click', () => {
+            // Redireciona para a página de cadastro
+            window.location.href = 'index.html';
+        });
+
+        document.getElementById('btnSair').addEventListener('click', () => {
+            // Simula saída — pode fechar a aba ou exibir mensagem
+            alert('Obrigado por usar o sistema. Até logo!');
+            // Para fechar a aba, pode tentar:
+            // window.close();
+        });
+    </script>
+</body>
+</html>
+
